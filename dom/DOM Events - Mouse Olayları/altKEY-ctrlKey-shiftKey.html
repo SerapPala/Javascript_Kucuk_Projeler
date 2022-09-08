@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>altKEY-ctrlKey-shiftKey</title>
+
+    <style type="text/css">
+
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+
+ <button onmousedown="islemCTRL(event)">CTRL Tuşuna basarak tıkla </button>
+    <button onmousedown="islemALT(event)">ALT Tuşuna basarak tıkla </button> 
+    <button onmousedown="islemShift(event)">Shift Tuşuna basarak tıkla </button>
+    <script>
+        function islemCTRL(event) {
+
+            if(event.ctrlKey){
+alert( "CTRL TUŞU BASILIYKEN MOUSE İLE TIKLADINIZ")
+            }else{
+                alert( "ctrl tuşuna basılmadı")
+            }
+        }
+
+
+        function islemALT(event) {
+
+if(event.altKey){
+alert( "ALT TUŞU BASILIYKEN MOUSE İLE TIKLADINIZ")
+}else{
+    alert( "alt tuşuna basılmadı")
+}
+}
+function islemShift(event) {
+
+if(event.shiftKey){
+alert( "Shift TUŞU BASILIYKEN MOUSE İLE TIKLADINIZ")
+}else{
+    alert( "Shift tuşuna basılmadı")
+}
+}
+    </script>
+</body>
+
+</html>

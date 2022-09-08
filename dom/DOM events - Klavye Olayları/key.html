@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>key</title>
+
+    <style type="text/css">
+
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <input onkeydown="islem()" type=" text" placeholder="Bir tuşa basınız">
+
+    <div id="sonuc"></div>
+
+    <script>
+        function islem() {
+            var x = event.key;
+            document.getElementById("sonuc").innerHTML = "Basılan Karakter  : " + x;
+        }
+
+
+    </script>
+</body>
+
+</html>

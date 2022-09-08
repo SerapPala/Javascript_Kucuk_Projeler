@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerHTML</title>
+  
+</head>
+
+<body>
+
+<p id="udemy">Udemy Kursu Javascript</p>
+<p id="ad">SERAP</p>
+
+<p id="soyad">PALA</p>
+
+
+    <script>
+
+var e=document.getElementById("udemy").innerHTML;
+console.log(e);
+
+      var ad = document.getElementById("ad").innerHTML;
+      var soyad = document.getElementById("soyad").innerHTML;
+      document.write(ad + " " +soyad + "<br>")
+
+document.getElementById("udemy").innerHTML = "değiştim"
+
+    </script>
+</body>
+
+</html>

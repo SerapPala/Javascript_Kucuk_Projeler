@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>clientX-clientY</title>
+
+
+</head>
+
+<body>
+
+    <!-- <button id="kaybol" onclick="islem(event)">tıkla ve yok et </button> -->
+    <img onclick="islem(event)"
+        src="https://docviewer.yandex.com.tr/view/0/htmlimage?id=zdw-3rjf3t3dpyly3cxz3pjwxwtcr8xng05tmrkzhk59vhlsepfxn9j9ew7lu2lkfgl5hzy60ocyhuvtah29x4ilv3w2rnk0y9dom7x&name=image-yYjUFd5YSfeXiFHOcE.jpg&dsid=7fafdb441589f68e632ba21573047a65">
+
+    <div id="sonuc"></div>
+
+
+    <script>
+        function islem(event) {
+            var x = event.clientX;
+           var y = event.clientY;
+
+
+                document.getElementById("sonuc").innerHTML = "X Koordinatı" + x + "Y Koordinatı" + y;
+              
+                if((x>228 && x<249) && (y>226 && y<249)){
+
+                }
+                document.getElementById("sonuc").innerHTML ="Kalp bulundu"
+        }
+    </script>
+
+</body>
+
+</html>

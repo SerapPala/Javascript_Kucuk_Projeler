@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>buttons</title>
+
+  
+</head>
+
+<body>
+
+
+    <button onmousedown="deneme()">Mouse Tuşlarından birine tıkla </button>
+    <div id="sonuc"> </div>
+
+
+    <script>
+        function deneme() {
+            document.getElementById("sonuc").innerHTML = "TIKLADIGINIZ TUŞ :" + event.buttons;
+        }
+    </script>
+</body>
+
+</html>

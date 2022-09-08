@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>detail</title>
+
+  
+</head>
+
+<body>
+
+
+    <button onclick="deneme()">Mouse Tuşlarından birine tıkla </button>
+    <div id="sonuc"> </div>
+
+
+    <script>
+        function deneme() {
+            document.getElementById("sonuc").innerHTML = "Tıklama sayısı :" + event.detail;
+        }
+    </script>
+</body>
+
+</html>

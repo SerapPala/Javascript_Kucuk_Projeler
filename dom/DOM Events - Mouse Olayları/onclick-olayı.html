@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onclick-olayı</title>
+
+</head>
+
+<body>
+    <h1 onclick="degistir(this)">SERAP PALA</h1>
+    <button onclick="displayDate()">Tarih ve saati göster</button>
+    <p id="tarihsaat"></p>
+    <script>
+
+        function degistir(icerik) {
+            icerik.innerHTML = "Udemy Kursuna hoş geldin"
+        }
+        function displayDate(){
+            document.getElementById("tarihsaat").innerHTML = Date();
+        }
+    </script>
+
+</body>
+
+</html>

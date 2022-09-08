@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setAttribute</title>
+  
+</head>
+
+<body>
+<a id="udemy" >Udemy sitesine git</a>
+<button onclick="islem()">Ekle</button>
+<button onclick="targetEkle()">Target Ekle</button>
+    <script>
+        function islem(){
+            document.getElementById("udemy").setAttribute("href","https://www.udemy.com")
+        }
+          
+
+       var e=  document.getElementById("udemy").attributes;
+       console.log(e);
+
+
+
+function targetEkle(){
+        var y = document.getElementById("udemy");
+        console.log(y);
+
+       // console.log(y.hasAttribute("target"));
+
+       if(!y.hasAttribute("target")){
+
+        y.setAttribute("target","_blank")
+       }
+
+}
+
+
+
+    </script>
+</body>
+
+</html>

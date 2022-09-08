@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>charCode-which-keycode</title>
+
+    <style type="text/css">
+
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <input onkeypress="islem()" type=" text" placeholder="Bir tuşa basınız">
+
+    <div id="sonuc"></div>
+
+    <script>
+        function islem() {
+            var x = event.which;
+            document.getElementById("sonuc").innerHTML = "Unicode Karakter  : " + x;
+        }
+
+
+    </script>
+</body>
+
+</html>
